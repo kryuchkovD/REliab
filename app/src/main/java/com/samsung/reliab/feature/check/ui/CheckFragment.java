@@ -14,6 +14,7 @@ import androidx.navigation.Navigation;
 import com.samsung.reliab.databinding.FragmentCheckBinding;
 import com.samsung.reliab.databinding.FragmentPreviewBinding;
 import com.samsung.reliab.domain.model.Sites;
+import com.samsung.reliab.feature.check.ui.presentation.CheckStatus;
 import com.samsung.reliab.feature.check.ui.presentation.CheckViewModel;
 import com.samsung.reliab.feature.preview.ui.presentation.PreviewStatus;
 import com.samsung.reliab.feature.preview.ui.presentation.PreviewViewModel;
@@ -49,7 +50,7 @@ public class CheckFragment extends Fragment {
 
     }
 
-    private void renderStatus(PreviewStatus status) {
+    private void renderStatus(CheckStatus status) {
 
         switch (status) {
             case LOADING:

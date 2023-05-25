@@ -15,7 +15,6 @@ import retrofit2.Callback;
 import retrofit2.Call;
 import retrofit2.Response;
 
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -23,18 +22,39 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SitesApiService.getInstance().getSites().enqueue(new Callback<List<Sites>>() {
+        SitesApiService.getInstance().getName().enqueue(new Callback<Sites>() {
             @Override
-            public void onResponse(@NonNull Call<List<Sites>> call, @NonNull Response<List<Sites>> response) {
+            public void onResponse(@NonNull Call<Sites> call, @NonNull Response<Sites> response) {
                 assert response.body() != null;
                 Log.d("DEBUG", response.body().toString());
             }
 
             @Override
-            public void onFailure(@NonNull Call<List<Sites>> call, @NonNull Throwable throwable) {
+            public void onFailure(@NonNull Call<Sites> call, @NonNull Throwable throwable) {
                 throwable.printStackTrace();
             }
         });
 
+        SitesApiService.getInstance().getUrl().enqueue(new Callback<Sites>() {
+            @Override
+            public void onResponse(@NonNull Call<Sites> call, @NonNull Response<Sites> response) {
+            }
+
+            @Override
+            public void onFailure(@NonNull Call<Sites> call, @NonNull Throwable t) {
+
+            }
+        });
+        SitesApiService.getInstance().getStatus().enqueue(new Callback<Sites>() {
+            @Override
+            public void onResponse(@NonNull Call<Sites> call, @NonNull Response<Sites> response) {
+
+            }
+
+            @Override
+            public void onFailure(@NonNull Call<Sites> call, @NonNull Throwable t) {
+
+            }
+        });
     }
 }

@@ -9,26 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        tools:listitem="@layout/item_users"/>
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:listitem="@layout/item_sites" />
 
-    <TextView
-        android:id="@+id/empty"
-        android:text="@string/no_users"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
-    <TextView
-        android:id="@+id/error"
-        android:text="@string/network_error"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <ProgressBar
-        android:id="@+id/progress"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

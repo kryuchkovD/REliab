@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Reliab</string>
+    <string name="network_error" />
+    <string name="no_sites">\n</string>
 </resources>

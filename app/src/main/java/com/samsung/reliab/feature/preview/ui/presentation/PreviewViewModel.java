@@ -8,30 +8,28 @@ import androidx.lifecycle.ViewModel;
 import com.samsung.reliab.data.repository.SitesRepository;
 import com.samsung.reliab.domain.model.Sites;
 
-import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class PreviewViewModel extends ViewModel {
 
-    private MutableLiveData<PreviewStatus> _status = new MutableLiveData<>();
+    private final MutableLiveData<PreviewStatus> _status = new MutableLiveData<>();
     public LiveData<PreviewStatus> status = _status;
-    private MutableLiveData<List<Sites>> _sites = new MutableLiveData<>();
-    public LiveData<List<Sites>> sites = _sites;
+    private final MutableLiveData <Sites>  _sites = new MutableLiveData<Sites>();
+    public LiveData<Sites> sites = _sites;
 
     public void load() {
         _status.setValue(PreviewStatus.LOADING);
-        SitesRepository.getSites().enqueue(new Callback<List<Sites>>() {
+        SitesRepository.getName().enqueue(new Callback<Sites>() {
             @Override
-            public void onResponse(@NonNull Call<List<Sites>> call, @NonNull Response<List<Sites>> response) {
+            public void onResponse(@NonNull Call<Sites> call, @NonNull Response<Sites> response) {
                 _status.setValue(PreviewStatus.LOADED);
                 _sites.setValue(response.body());
             }
 
             @Override
-            public void onFailure(@NonNull Call<List<Sites>> call, @NonNull Throwable throwable) {
+            public void onFailure(@NonNull Call<Sites> call, @NonNull Throwable throwable) {
                 _status.setValue(PreviewStatus.FAILURE);
                 throwable.printStackTrace();
             }
