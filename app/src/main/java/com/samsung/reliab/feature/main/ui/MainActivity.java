@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(@NonNull Call<Sites> call, @NonNull Throwable t) {
+            public void onFailure(@NonNull Call<Sites> call, @NonNull Throwable throwable) {
 
             }
         });
