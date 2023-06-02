@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "767786014375",
+    "project_id": "reliab",
+    "storage_bucket": "reliab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767786014375:android:36d910fd6dc6df38b8ed82",
+        "android_client_info": {
+          "package_name": "com.samsung.reliab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767786014375-r4t3l5v8ftac6gapran6o5u1tr4nihfc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnywa9CH1LN3SY0NUa7R5-sJovQsbFNqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767786014375-r4t3l5v8ftac6gapran6o5u1tr4nihfc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

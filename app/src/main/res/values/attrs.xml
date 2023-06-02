@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Base.Theme.Reliab">
+        <attr name="reliab_text_weak" format="reference" />
+        <attr name="reliab_text_disabled" format="reference" />
+        <attr name="reliab_text_norm" format="reference" />
+        <attr name="reliab_background_norm" format="reference" />
+        <attr name="reliab_interaction_norm" format="reference" />
+    </declare-styleable>
+</resources>

@@ -2,4 +2,20 @@
     <string name="app_name">Reliab</string>
     <string name="network_error" />
     <string name="no_sites">\n</string>
+
+    <string name="login_user">Login</string>
+    <string name="register_user">Register</string>
+    <string name="login_user_text">Already have an account? Sign in!</string>
+    <string name="register_user_text">Don\'t you have an account? Register!</string>
+
+    <string name="password_error_length">The password must be at least 8 characters long</string>
+    <string name="password_error_lowercase">The password must contain at least one lowercase letter</string>
+    <string name="password_error_uppercase">The password must contain at least one capital letter</string>
+    <string name="password_error_digit">The password must contain at least one digit</string>
+    <string name="header_text">Check fresh news to reliability</string>
+    <string name="check_btn">Check</string>
+    <string name="websiteInfo">Information about website</string>
+    <string name="websiteName">Website:</string>
+    <string name="websiteURL">URL:</string>
+    <string name="websiteStatus">Status:</string>
 </resources>

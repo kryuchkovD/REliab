@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/accountDetails"
+        style="@style/SectionHeadlineText.Brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="@string/websiteInfo" />
+
+    <LinearLayout style="@style/TableRowLayout">
+
+        <TextView
+            android:id="@+id/websiteNameLabel"
+            style="@style/TableLabelText"
+            android:text="@string/websiteName" />
+
+        <TextView
+            android:id="@+id/websiteNameText"
+            style="@style/TableValueText"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="VK.com" />
+    </LinearLayout>
+
+    <View style="@style/Divider.Small" />
+
+    <LinearLayout style="@style/TableRowLayout">
+
+        <TextView
+            android:id="@+id/websiteUrlLabel"
+            style="@style/TableLabelText"
+            android:text="@string/websiteURL" />
+
+        <TextView
+            android:id="@+id/websiteUrlText"
+            style="@style/TableValueText"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="https://vk.com/" />
+    </LinearLayout>
+
+    <View style="@style/Divider.Small" />
+
+    <LinearLayout style="@style/TableRowLayout">
+
+        <TextView
+            android:id="@+id/websiteStatusLabel"
+            style="@style/TableLabelText"
+            android:text="@string/websiteStatus" />
+
+        <TextView
+            android:id="@+id/websiteStatusText"
+            style="@style/TableValueText"
+            android:background="@drawable/background_badge"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="4dp"
+            android:textStyle="bold"
+            app:drawableStartCompat="@drawable/ic_arrow_right_rec_24"
+            app:drawableTint="#EC407A"
+            tools:text="FALSE" />
+    </LinearLayout>
+
+    <View style="@style/Divider.Small" />
+</LinearLayout>
